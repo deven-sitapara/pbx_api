@@ -157,6 +157,49 @@
           "message": "Unauthorized Access"
       }
 
+* **URL**
+
+  https://{yourdomain.com}/extension/bytenant
+
+* **Method:**
+  POST
+
+* **Perameter:**
+  tenant_id:
+
+*  **BASIC Auth**
+    username:
+    password:
+
+* **Output Format**
+  JSON
+* **Success Response:**
+
+      {
+          "status": "success",
+          "data": [
+                  {
+                      "ex_id": "61",
+                      "ex_name": "Jessica Holdcroft (Desk Phone)",
+                      "ex_number": "1222"
+                  },
+                  {
+                      "ex_id": "49",
+                      "ex_name": "Xander Robar (Softphone - Mobile)",
+                      "ex_number": "1223"
+                  },
+              ]
+          }
+      }
+* **Error Response:**
+
+  Whenever there is an error it will return as follows.
+
+      {
+          "status": "failed",
+          "message": "Unauthorized Access"
+      }
+ 
 * **Notes:**
 
   All Request will be allowed based on basic authentication with username and password.
