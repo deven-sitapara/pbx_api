@@ -191,6 +191,42 @@
               ]
           }
       }
+
+
+
+* **URL**
+
+  https://{yourdomain.com}/extension/user
+
+* **Method:**
+  POST
+
+* **Perameter:**
+  tenant_id:
+  extension_id:
+
+*  **BASIC Auth**
+    username:
+    password:
+
+* **Output Format**
+  JSON
+* **Success Response:**
+
+      {
+          "status": "success",
+          "data": [
+              {
+                  "name": "251-UniglobeDorval",
+                  "host": "dynamic",
+                  "secret": "$50jLkuPLypGxqBmyftPV51AM91."
+              }
+          ]
+      }
+
+
+
+
 * **Error Response:**
 
   Whenever there is an error it will return as follows.
@@ -199,7 +235,11 @@
           "status": "failed",
           "message": "Unauthorized Access"
       }
- 
+
+
+
+
+
 * **Notes:**
 
   All Request will be allowed based on basic authentication with username and password.
