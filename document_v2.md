@@ -199,6 +199,38 @@
       }
 
 
+* **URL**
+
+  https://{yourdomain.com}/extension/byid
+
+* **Method:**
+  POST
+
+* **Perameter:**
+  extension_id:
+
+*  **BASIC Auth**
+    username:
+    password:
+
+* **Output Format**
+  JSON
+* **Success Response:**
+
+      {
+          "status": "success",
+          "data": [
+              {
+                  "ex_id": "240",
+                  "ex_name": "Test",
+                  "ex_number": "251",
+                  "ex_cidnum": "",
+                  "ex_cidname": "Test",
+                  "ex_callwaiting": ""
+              }
+          ]
+      }
+
 
 * **URL**
 
