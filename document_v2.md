@@ -178,17 +178,23 @@
       {
           "status": "success",
           "data": [
-                  {
-                      "ex_id": "61",
-                      "ex_name": "Jessica Holdcroft (Desk Phone)",
-                      "ex_number": "1222"
-                  },
-                  {
-                      "ex_id": "49",
-                      "ex_name": "Xander Robar (Softphone - Mobile)",
-                      "ex_number": "1223"
-                  },
-              ]
+              {
+                  "ex_id": "11",
+                  "ex_name": "Chris Latremoille",
+                  "ex_number": "221",
+                  "ex_cidnum": "15146339933",
+                  "ex_cidname": "Uniglobe Dorval",
+                  "ex_callwaiting": ""
+              },
+              {
+                  "ex_id": "12",
+                  "ex_name": "Francine Girard",
+                  "ex_number": "222",
+                  "ex_cidnum": "15146339933",
+                  "ex_cidname": "Uniglobe Dorval",
+                  "ex_callwaiting": ""
+              },
+                  ]
           }
       }
 
