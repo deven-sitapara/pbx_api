@@ -264,6 +264,32 @@
 
 
 
+* **URL**
+
+  https://{yourdomain.com}/extension/usersecret
+
+* **Method:**
+  POST
+
+* **Perameter:**
+  tenant_id:
+  extension_id:
+
+*  **BASIC Auth**
+    username:
+    password:
+
+* **Output Format**
+  JSON
+* **Success Response:**
+
+      {
+          "status": "success",
+          "data": "$aLRMruPLypGxqBmyftPV5FPJ3I."
+      }
+
+
+
 
 * **Error Response:**
 
