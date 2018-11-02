@@ -289,6 +289,130 @@
       }
 
 
+* **URL**
+
+  https://{yourdomain.com}/extension/getCidNumber
+
+* **Method:**
+  POST
+
+* **Perameter:**
+  extension_id:
+
+*  **BASIC Auth**
+    username:
+    password:
+
+* **Output Format**
+  JSON
+* **Success Response:**
+
+      {
+          "status": "success",
+          "data": "15146339933"
+      }
+
+
+* **URL**
+
+  https://{yourdomain.com}/extension/getCidNumberList
+
+* **Method:**
+  POST
+
+* **Perameter:**
+  tenant_id:
+
+*  **BASIC Auth**
+    username:
+    password:
+
+* **Output Format**
+  JSON
+* **Success Response:**
+
+      {
+          "status": "success",
+          "data": [
+              {
+                  "ex_cidnum": "15146339933"
+              },
+              {
+                  "ex_cidnum": "15146339933"
+              },
+              {
+                  "ex_cidnum": "15146339933"
+              },
+              {
+                  "ex_cidnum": "15146339933"
+              },
+          ]
+      }
+
+
+
+
+* **URL**
+
+  https://{yourdomain.com}/extension/GetFMFCallerId
+
+* **Method:**
+  POST
+
+* **Perameter:**
+  extension_id:
+
+*  **BASIC Auth**
+    username:
+    password:
+
+* **Output Format**
+  JSON
+* **Success Response:**
+
+      {
+          "status": "success",
+          "data": "15146339933"
+      }
+
+
+* **URL**
+
+  https://{yourdomain.com}/extension/GetFMFCallerIdList
+
+* **Method:**
+  POST
+
+* **Perameter:**
+  tenant_id:
+
+*  **BASIC Auth**
+    username:
+    password:
+
+* **Output Format**
+  JSON
+* **Success Response:**
+
+      {
+          "status": "success",
+          "data": [
+              {
+                  "GetFMFCallerId": "15146339933"
+              },
+              {
+                  "GetFMFCallerId": "15146339933"
+              },
+              {
+                  "GetFMFCallerId": "15146339933"
+              },
+              {
+                  "GetFMFCallerId": "15146339933"
+              },
+          ]
+      }
+
+
 
 
 * **Error Response:**
