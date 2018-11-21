@@ -412,6 +412,256 @@
           ]
       }
 
+---------------------
+* **URL**
+
+  https://{yourdomain.com}/did/bytenant
+
+* **Method:**
+  POST
+
+* **Perameter:**
+  tenant_id:
+
+*  **BASIC Auth**
+    username:
+    password:
+
+* **Output Format**
+  JSON
+* **Success Response:**
+
+      {
+          "status": "success",
+          "data": [
+              {
+                  "di_id": "2",
+                  "di_country": "",
+                  "di_area": "",
+                  "di_number": "15146001434",
+                  "di_comment": ""
+              },
+              {
+                  "di_id": "3",
+                  "di_country": "",
+                  "di_area": "",
+                  "di_number": "14388197387",
+                  "di_comment": ""
+              },
+              {
+                  "di_id": "30",
+                  "di_country": "",
+                  "di_area": "",
+                  "di_number": "15146339933",
+                  "di_comment": "Uniglobe Dorval - Main"
+              }
+          ]
+      }
+
+
+* **URL**
+
+  https://{yourdomain.com}/did/byid
+
+* **Method:**
+  POST
+
+* **Perameter:**
+  did_id:
+
+*  **BASIC Auth**
+    username:
+    password:
+
+* **Output Format**
+  JSON
+* **Success Response:**
+
+     {
+         "status": "success",
+         "data": [
+             {
+                 "di_te_id": "2",
+                 "di_country": "",
+                 "di_area": "",
+                 "di_number": "12894701289",
+                 "di_comment": "OnSwitch - Canada - Ontario - Newmarket",
+                 "di_recording": "yes",
+                 "di_fax": "no",
+                 "di_didprefix": "",
+                 "di_didnameprefix": ""
+             }
+         ]
+     }
+
+
+* **URL**
+
+  https://{yourdomain.com}/hunt/bytenant
+
+* **Method:**
+  POST
+
+* **Perameter:**
+  tenant_id:
+
+*  **BASIC Auth**
+    username:
+    password:
+
+* **Output Format**
+  JSON
+* **Success Response:**
+
+      {
+          "status": "success",
+          "data": [
+              {
+                  "hu_id": "3",
+                  "hu_number": "501",
+                  "hu_name": "Franchise Opportunities",
+                  "hu_type": "RINGALL",
+                  "hu_ringtime": "60"
+              },
+              {
+                  "hu_id": "4",
+                  "hu_number": "502",
+                  "hu_name": "General Inquriies",
+                  "hu_type": "RINGALL",
+                  "hu_ringtime": "60"
+              }
+          ]
+      }
+
+
+* **URL**
+
+  https://{yourdomain.com}/hunt/byid
+
+* **Method:**
+  POST
+
+* **Perameter:**
+  hunt_id:
+
+*  **BASIC Auth**
+    username:
+    password:
+
+* **Output Format**
+  JSON
+* **Success Response:**
+
+     {
+         "status": "success",
+         "data": [
+             {
+                 "hu_id": "2",
+                 "hu_number": "302",
+                 "hu_name": "All Internal Phones",
+                 "hu_type": "RINGALL",
+                 "hu_ringtime": "40"
+             }
+         ]
+     }
+
+
+* **URL**
+
+  https://{yourdomain.com}/hunt/deletebyid
+
+* **Method:**
+  POST
+
+* **Perameter:**
+  hunt_id:
+
+*  **BASIC Auth**
+    username:
+    password:
+
+* **Output Format**
+  JSON
+* **Success Response:**
+
+     {
+         "status": "success",
+         "data": "Record Deleted Successfully."
+     }
+
+* **Error Response:**
+
+     {
+         "status": "failed",
+         "message": "Record Not Found."
+     }
+
+
+* **URL**
+
+  https://{yourdomain.com}/phone/bytenant
+
+* **Method:**
+  POST
+
+* **Perameter:**
+  tenant_id:
+
+*  **BASIC Auth**
+    username:
+    password:
+
+* **Output Format**
+  JSON
+* **Success Response:**
+
+     {
+         "status": "success",
+         "data": [
+             {
+                 "ph_id": "1",
+                 "ph_name": "asdas",
+                 "ph_te_id": "1",
+                 "ph_pm_id": "1",
+                 "ph_mac": "asd",
+                 "ph_filename": "asdasd"
+             }
+         ]
+     }
+
+
+* **URL**
+
+  https://{yourdomain.com}/phone/deletebyid
+
+* **Method:**
+  POST
+
+* **Perameter:**
+  phone_id:
+
+*  **BASIC Auth**
+    username:
+    password:
+
+* **Output Format**
+  JSON
+* **Success Response:**
+
+     {
+         "status": "success",
+         "data": "Record Deleted Successfully."
+     }
+
+* **Error Response:**
+
+     {
+         "status": "failed",
+         "message": "Record Not Found."
+     }
+
+
+
 
 
 
