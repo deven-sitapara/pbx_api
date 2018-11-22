@@ -412,7 +412,7 @@
           ]
       }
 
----------------------
+
 * **URL**
 
   https://{yourdomain.com}/did/bytenant
