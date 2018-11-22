@@ -661,6 +661,185 @@
      }
 
 
+* **URL**
+
+  https://{yourdomain.com}/phone/AddNewPhone
+
+* **Method:**
+  POST
+
+* **Perameter:**
+  phone:
+
+    Example value: {"ph_name":"xyz","ph_te_id":"1","ph_pm_id":"1","ph_mac":"1.1.25.1","ph_http_user":"abcdasda","ph_http_password":"132456"}
+
+*  **BASIC Auth**
+    username:
+    password:
+
+* **Output Format**
+  JSON
+* **Success Response:**
+
+     {
+         "status": "success",
+         "data": {
+             "msg": "Record Inserted Successfully.",
+             "PhoneID": "4"
+         }
+     }
+
+* **Error Response:**
+
+    {
+        "status": "failed",
+        "message": "Please Enter Required Fields."
+    }
+
+Required Fields:
+ph_name,ph_te_id,ph_pm_id,ph_mac
+
+
+* **URL**
+
+  https://{yourdomain.com}/hunt/updatebyid
+
+* **Method:**
+  POST
+
+* **Perameter:**
+  hunt_id:
+  hunt:
+
+    Example value hunt: {"hu_number":"111","hu_name":"AAA","hu_type":"AA","hu_ringtime":"2"}
+
+*  **BASIC Auth**
+    username:
+    password:
+
+* **Output Format**
+  JSON
+* **Success Response:**
+
+     {
+         "status": "success",
+         "data": {
+             "msg": "Record Updated Successfully."
+         }
+     }
+
+* **Error Response:**
+
+    {
+        "status": "failed",
+        "message": "Record Not Found."
+    }
+
+
+* **URL**
+
+  https://{yourdomain.com}/did/updatebyid
+
+* **Method:**
+  POST
+
+* **Perameter:**
+  did_id:
+  did:
+
+    Example value did: {"di_number":"1111111","di_didprefix":"12","di_didnameprefix":"asd","di_country":"USA","di_area":"test","di_comment":"Test Comment"}
+
+*  **BASIC Auth**
+    username:
+    password:
+
+* **Output Format**
+  JSON
+* **Success Response:**
+
+     {
+         "status": "success",
+         "data": {
+             "msg": "Record Updated Successfully."
+         }
+     }
+
+* **Error Response:**
+
+    {
+        "status": "failed",
+        "message": "Record Not Found."
+    }
+
+
+* **URL**
+
+  https://{yourdomain.com}/voicemail/bytenant
+
+* **Method:**
+  POST
+
+* **Perameter:**
+  tenant_id:
+
+*  **BASIC Auth**
+    username:
+    password:
+
+* **Output Format**
+  JSON
+* **Success Response:**
+
+    {
+        "status": "success",
+        "data": [
+            {
+                "uniqueid": "55",
+                "context": "EscapeGamesCanada",
+                "fullname": "General Delivery Voicemail",
+                "email": "info@escapegames.ca"
+            }
+        ]
+    }
+
+
+
+* **URL**
+
+  https://{yourdomain.com}/user/updatebyid
+
+* **Method:**
+  POST
+
+* **Perameter:**
+  user_id:
+  password:
+
+*  **BASIC Auth**
+    username:
+    password:
+
+* **Output Format**
+  JSON
+* **Success Response:**
+
+    {
+        "status": "success",
+        "data": {
+            "msg": "Record Updated Successfully."
+        }
+    }
+
+* **Error Response:**
+
+{
+    "status": "failed",
+    "message": "Record Not Found."
+}
+
+
+
+
 
 
 
