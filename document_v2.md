@@ -496,6 +496,7 @@
      }
 
 
+
 * **URL**
 
   https://{yourdomain.com}/hunt/bytenant
@@ -539,6 +540,7 @@
 
   https://{yourdomain.com}/hunt/byid
 
+
 * **Method:**
   POST
 
@@ -552,6 +554,7 @@
 * **Output Format**
   JSON
 * **Success Response:**
+
 
      {
          "status": "success",
