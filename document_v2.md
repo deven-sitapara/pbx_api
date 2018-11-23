@@ -477,6 +477,7 @@
   JSON
 * **Success Response:**
 
+
      {
          "status": "success",
          "data": [
@@ -1004,6 +1005,30 @@ ph_name,ph_te_id,ph_pm_id,ph_mac
         "message": "Record Not Found."
     }
 
+
+
+* **URL**
+
+  https://{yourdomain.com}/cdr/getCallHistory
+
+* **Method:**
+  POST
+
+* **Perameter:**
+  start_date_ymd:
+  end_date_ymd:
+  tenant_code
+  firstdst
+  disposition
+  cost
+
+
+*  **BASIC Auth**
+    username:
+    password:
+
+* **Output Format**
+  JSON
 
 
 
