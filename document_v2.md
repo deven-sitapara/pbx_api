@@ -553,18 +553,21 @@
   JSON
 * **Success Response:**
 
+
      {
          "status": "success",
          "data": [
              {
-                 "hu_id": "2",
-                 "hu_number": "302",
-                 "hu_name": "All Internal Phones",
+                 "hu_id": "4",
+                 "hu_number": "502",
+                 "hu_name": "General Inquriies",
                  "hu_type": "RINGALL",
-                 "hu_ringtime": "40"
+                 "hu_ringtime": "60",
+                 "hu_checkinuse": ""
              }
          ]
      }
+
 
 
 * **URL**
