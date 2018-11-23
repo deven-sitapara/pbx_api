@@ -553,7 +553,6 @@
   JSON
 * **Success Response:**
 
-
      {
          "status": "success",
          "data": [
@@ -567,7 +566,6 @@
              }
          ]
      }
-
 
 
 * **URL**
