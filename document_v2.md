@@ -840,6 +840,170 @@ ph_name,ph_te_id,ph_pm_id,ph_mac
 
 
 
+* **URL**
+
+  https://{yourdomain.com}/condition/bytenant
+
+* **Method:**
+  POST
+
+* **Perameter:**
+  tenant_id:
+
+*  **BASIC Auth**
+    username:
+    password:
+
+* **Output Format**
+  JSON
+* **Success Response:**
+
+    {
+        "status": "success",
+        "data": [
+            {
+                "co_id": "2",
+                "co_name": "Chris Latremoille DISA (END OF CHAIN)",
+                "co_type": "CALLERID",
+                "co_timezone": "",
+                "co_param1": "5146349955",
+                "co_param2": "5149239933",
+                "co_param3": "",
+                "co_param4": "",
+                "co_param5": "",
+                "co_param6": "",
+                "co_param7": "",
+                "co_param8": "",
+                "co_param9": "",
+                "co_param10": "",
+                "co_param11": "",
+                "co_param12": ""
+            },
+            {
+                "co_id": "3",
+                "co_name": "Francine Girard DISA",
+                "co_type": "CALLERID",
+                "co_timezone": "",
+                "co_param1": "5148273211",
+                "co_param2": "",
+                "co_param3": "",
+                "co_param4": "",
+                "co_param5": "",
+                "co_param6": "",
+                "co_param7": "",
+                "co_param8": "",
+                "co_param9": "",
+                "co_param10": "",
+                "co_param11": "",
+                "co_param12": ""
+            }
+        ]
+    }
+
+
+
+* **URL**
+
+  https://{yourdomain.com}/ivr/bytenant
+
+* **Method:**
+  POST
+
+* **Perameter:**
+  tenant_id:
+
+*  **BASIC Auth**
+    username:
+    password:
+
+* **Output Format**
+  JSON
+* **Success Response:**
+
+    {
+        "status": "success",
+        "data": [
+            {
+                "iv_id": "1",
+                "iv_name": "Main Menu - FR"
+            },
+            {
+                "iv_id": "4",
+                "iv_name": "Main Menu - EN"
+            }
+        ]
+    }
+
+
+
+* **URL**
+
+  https://{yourdomain.com}/custom/bytenant
+
+* **Method:**
+  POST
+
+* **Perameter:**
+  tenant_id:
+
+*  **BASIC Auth**
+    username:
+    password:
+
+* **Output Format**
+  JSON
+* **Success Response:**
+
+    {
+        "status": "success",
+        "data": [
+            {
+                "cu_id": "2",
+                "cu_name": "Vickie Kyriakakos Mobile",
+                "cu_ct_id": "1",
+                "ct_name": "FORWARD",
+                "ct_description": "<t>Forward call to</t>"
+            }
+        ]
+    }
+
+
+
+* **URL**
+
+  https://{yourdomain.com}/extension/updatebyid
+
+* **Method:**
+  POST
+
+* **Perameter:**
+  extension_id:
+  extension:
+
+    Example value hunt: {"ex_name":"AAA","ex_number":"11","ex_cidnum":"12","ex_cidname":"AAA"}
+
+*  **BASIC Auth**
+    username:
+    password:
+
+* **Output Format**
+  JSON
+* **Success Response:**
+
+     {
+         "status": "success",
+         "data": {
+             "msg": "Record Updated Successfully."
+         }
+     }
+
+* **Error Response:**
+
+    {
+        "status": "failed",
+        "message": "Record Not Found."
+    }
+
 
 
 
